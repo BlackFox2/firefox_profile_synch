@@ -23,7 +23,7 @@ void printProcessNameAndId(DWORD processID)
 	//Get the process name
 	if (NULL != hProcess) 
 	{
-		HMODULE hmod;
+		HMODULE hmod; 
 		DWORD cbNeeded;
 
 		if (EnumProcessModules(hProcess, &hmod, sizeof(hmod), &cbNeeded))
