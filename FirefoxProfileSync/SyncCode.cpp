@@ -17,8 +17,8 @@ FILE *proc_list;
 void printProcessNameAndId(DWORD processID) 
 {
 	TCHAR szProcessName[MAX_PATH] = TEXT("<unknown>");
-
-	//Get a handle to the process.
+	  
+	//Get a handle to the process. 
 	HANDLE hProcess = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, processID);
 	//Get the process name
 	if (NULL != hProcess) 
